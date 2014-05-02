@@ -14,8 +14,6 @@ J = 0;
 %               You should set J to the cost.
 m = size(X,1);
 predictions =  X * theta;
-whos;
-keyboard;
 sqrErrors = (predictions' - y).^2;
 
 J = 1/(2*m) * sum(sqrErrors);
